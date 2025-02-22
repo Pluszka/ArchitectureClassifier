@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 body {
+    overflow:hidden;
     font-family: "Lucida Console", "Courier New", monospace;
     background-color: var(--purple);
     color: white;
@@ -20,6 +21,20 @@ body {
 
 h1 {
     font-size: 60px;
+    text-align: center;
+    height: 20vh;
+    margin: 0;
+    padding-top: 1rem;
+
+
+}
+
+h3 {
+    height: 10vh;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
 }
 
 
@@ -54,15 +69,16 @@ input[type="file"] {
     display: flex;
     gap: 0;
     margin-bottom: 20px;
+    margin: 2rem;
 }
 
 #results {
-    display: flex;
     justify-content: center;
-    display: inline-block;
-    border-right: 6px solid var(--dark-purple);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding-right: 10px;
-    height:60%;
+    height: 100vh;
     color: var(--yellow);
 }
 
@@ -81,8 +97,14 @@ input[type="file"] {
 
 #ready-image {
     text-align: center;
-    max-width: 400px;
-    max-height: 600px;
+    height: 60vh;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+
+
 }
 
 .submit-button {
